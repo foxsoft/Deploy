@@ -1,7 +1,7 @@
 bash -c '
 yum update -y
-yum install emacs which gcc gcc-c++ make gettext-devel expat-devel curl-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel wget bzip2 sendmail mailx libxml2 libxml2-devel libxslt libxslt-devel readline-devel ImageMagick -y
-service sendmail start patch
+yum install emacs which gcc gcc-c++ make gettext-devel expat-devel curl-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel wget bzip2 sendmail mailx libxml2 libxml2-devel libxslt libxslt-devel readline-devel ImageMagick patch -y
+service sendmail start
 wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.i386.rpm
 rpm -i rpmforge-release-0.5.2-2.el5.rf.i386.rpm
 yum install git-core -y
