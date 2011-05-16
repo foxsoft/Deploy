@@ -22,4 +22,5 @@ usermod -G rvm rails
 su puppet
 rvm ree@puppet
 gem install puppet
+echo "46.38.187.235     puppetmaster" >> /etc/hosts
 reboot'
