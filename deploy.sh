@@ -22,6 +22,8 @@ usermod -G rvm rails
 su puppet
 rvm ree@puppet
 gem install puppet
+rvm 1.9.2@global
+gem install bundler
 echo "
 46.38.187.235     puppetmaster" >> /etc/hosts
 reboot'
