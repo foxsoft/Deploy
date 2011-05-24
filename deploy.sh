@@ -25,5 +25,5 @@ gem install puppet
 rvm 1.9.2@global
 gem install bundler
 echo "
-46.38.187.235     puppetmaster" >> /etc/hosts
+10.176.71.212     puppetmaster" >> /etc/hosts
 reboot'
