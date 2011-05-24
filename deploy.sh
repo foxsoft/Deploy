@@ -6,6 +6,7 @@ wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.i386
 rpm -i rpmforge-release-0.5.2-2.el5.rf.i386.rpm
 yum install git-core -y
 iptables -I RH-Firewall-1-INPUT 3 -p tcp -m tcp --dport 80 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+service iptables save
 bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 source /etc/profile
 rvm install ree
