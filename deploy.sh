@@ -14,12 +14,11 @@ rvm install 1.9.2
 rvm --default 1.9.2
 rvm use ree
 rvm gemset create puppet
-rvm gemset use puppet
 groupadd puppet
 useradd -g puppet puppet
 usermod -G rvm puppet
-adduser rails
-usermod -G rvm rails
+adduser deploy
+usermod -G rvm deploy
 su puppet
 rvm ree@puppet
 gem install puppet
