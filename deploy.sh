@@ -26,4 +26,10 @@ rvm 1.9.2@global
 gem install bundler
 echo "
 10.176.71.212     puppetmaster" >> /etc/hosts
+mkdir -p /etc/puppet
+echo "
+[main]
+    pluginsync = true
+" > /etc/puppet/puppet.conf
+
 reboot'
